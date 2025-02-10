@@ -1,4 +1,4 @@
-package com.celcom.day5;
+package com.celcom.saturday_assignment_8th_Feb_2025;
 
 class Shape{
 	int width;
