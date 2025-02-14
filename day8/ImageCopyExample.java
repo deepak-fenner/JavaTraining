@@ -13,7 +13,7 @@ public class ImageCopyExample {
 		while((ch=fr.read())!=-1) {
 			fw.write(ch);
 		}
-		fr.close();
+		fr.close(); 
 		fw.close();
 		System.out.println("Image Copied");
 	}

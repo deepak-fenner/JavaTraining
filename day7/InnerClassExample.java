@@ -29,7 +29,6 @@ public class InnerClassExample{
 		System.out.println("Anonymous Inner Class");
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		InnerClassExample obj1=new InnerClassExample();
 		InnerClass1 inner1=obj1.new InnerClass1();
 		inner1.myMethod1();
@@ -47,6 +46,7 @@ public class InnerClassExample{
 		};
 		
 		obj3.display();
+		
 		
 		//Lambda Expression
 		MyInterface obj4=()->System.out.println("Lambda Expression");
