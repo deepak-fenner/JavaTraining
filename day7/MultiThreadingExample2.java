@@ -12,7 +12,6 @@ class MyThread extends Thread{
 			}
 		}
 	}
-	
 }
 public class MultiThreadingExample2 {
 

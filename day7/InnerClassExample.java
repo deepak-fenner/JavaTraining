@@ -1,4 +1,4 @@
-package com.celcom.day7;
+ package com.celcom.day7;
 //Interface for Anonymous Inner Class
 interface MyInterface{
 	void display();
