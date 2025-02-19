@@ -20,6 +20,7 @@ class Account1{
 		this.accountHolder=accountHolder;
 		this.balance=balance;
 	}
+	//method to deposit amount to the account
 	public void depositAmount(double amount) {
 		System.out.println("Initial Amount: "+balance);
 		if(amount>0) {
@@ -30,6 +31,7 @@ class Account1{
 			System.out.println("Invalid Amount");
 		}
 	}
+	//method to withdraw amount from an account
 	public void withdrawAmount(double amount) {
 		if(amount>0 && amount<=balance) {
 			System.out.println("Initial Balance: "+balance);
@@ -43,10 +45,12 @@ class Account1{
 }
 public class Bank {
 	private List<Account1>accounts=new ArrayList<>();
+	//to add a new account
 	void addAccount(Account1 account) {
 		accounts.add(account);
 		System.out.println("Account Added successfully....");
 	}
+	//method to remove an account
 	void removeAccount(String accountNumber) {
 		boolean flag=false;
 		for(Account1 account:accounts) {
@@ -63,6 +67,7 @@ public class Bank {
 			System.out.println("Account doesnot exist...");
 		}
 	}
+	//method to find an account
 	public Account1 findAccount(String accountNumber1) {
 		boolean flag=false;
 		for(Account1 account:accounts) {
@@ -72,6 +77,7 @@ public class Bank {
 		}
 		return null;
 	}
+	//method to display details 
 	public void displayDetails() {
 		for(Account1 account:accounts) {
 			System.out.println("Account Number:"+account.getAccountNumber());
@@ -80,7 +86,6 @@ public class Bank {
 		}
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		Bank bank=new Bank();
 		int choice;
